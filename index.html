@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="CV_.pdf" class="nav-link" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Nammiiro  Zaharah Bidin</h1>
+                        <p class="hero-subtitle">I'm Nammiiro Zaharah Bidin, a passionate software engineer and researcher based in Kampala, Uganda, with a strong focus on AI, IoT, and socially impactful technology. I have currently accomplished my bachelor's degree in May 2025 from Makerere University with First Class Honours in Software Engineering. During my academic journey, I co-founded the Mama Digital Wallet, an AI-powered maternal health platform funded by the MAK RISE Seeds Grant. I’ve contributed to groundbreaking projects in IoT deployment, health tech, and machine learning, while also mentoring students internationally through Club Tangaza. With experience spanning software development, research, and community leadership, I’m driven by a mission to build inclusive, scalable solutions that improve lives across Africa.</p>
+                        <div class="hero-buttons">
+                            <a href="CV_.pdf" class="btn btn-primary" target="_blank">View Resume</a>
+                            <a href="#certificates" class="btn btn-secondary nav-link">See Certificates</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/passport.png" alt="Profile Photo" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <div class="certificates-grid" id="certificatesGrid">
+                    <!-- Certificate images will be loaded here by script.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
