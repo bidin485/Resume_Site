@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Certificates: Load images from images/certificates/
     const certificatesGrid = document.getElementById('certificatesGrid');
     if (certificatesGrid) {
-        // List of certificate image filenames (user should update this list to match their files)
+        // List of certificate image filenames
         const certificateImages = [
             'WhatsApp Image 2025-07-21 at 08.43.15.jpeg',
             'WhatsApp Image 2025-07-21 at 08.43.16 (1).jpeg',
