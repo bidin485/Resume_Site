@@ -43,18 +43,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Certificates: Load images from images/certificates/
     const certificatesGrid = document.getElementById('certificatesGrid');
     if (certificatesGrid) {
-        // List of certificate image filenames (add your images here)
+        // List of certificate image filenames (user should update this list to match their files)
         const certificateImages = [
-            'Makerere Innovation and Incubation Program.jpg',
-            'certificate2.png',
-            'certificate3.jpg',
-            'certificate4.png',
-            'certificate5.jpg',
-            'certificate6.png',
-            'certificate7.jpg',
-            'certificate8.png',
-            'certificate9.jpg',
-            'certificate10.png'
+            'WhatsApp Image 2025-07-21 at 08.43.15.jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (1).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (10).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (2).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (3).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (4).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (5).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (6).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (7).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (8).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16 (9).jpeg',
+            'WhatsApp Image 2025-07-21 at 08.43.16.jpeg',
+            'Innovation_Hub.jpeg',
+            
         ];
         // Dynamically add images
         certificateImages.forEach(filename => {
@@ -63,9 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
             certificateItem.innerHTML = `
                 <div class="certificate-image">
                     <img src="images/certificates/${filename}" alt="Certificate" style="max-width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-                </div>
-                <div class="certificate-info">
-                    <h4>${filename.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' ')}</h4>
                 </div>
             `;
             // Click to view full size
@@ -108,7 +109,7 @@ function createCertificateItem(imageSrc, fileName) {
 
 // Image modal functionality
 function showImageModal(imageSrc, fileName) {
-    // Remove existing modal if any
+    
     const existingModal = document.querySelector('.image-modal');
     if (existingModal) {
         existingModal.remove();
